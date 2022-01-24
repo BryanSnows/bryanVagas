@@ -23,6 +23,13 @@ header {
     height: auto;
     width: 100%;
 }
+/* hide on desktop*/
+.nav-container .btn-menumobile {
+    display: none;
+}
+
+
+
 /* navbar*/
 nav {
     position: fixed;
@@ -75,7 +82,7 @@ nav:after {
 /* BANNER */
 
 #main-banner{
-    background: url('IMAGEM /engenharia.jpeg') no-repeat;
+    background: url('IMAGEM/engenharia.jpeg') no-repeat;
     background-size: cover;
     background-position:0 55%;
     position: relative;
@@ -255,14 +262,12 @@ nav:after {
     font-weight: bold;
     transition: 0.5s;
 }
-.btn-jobs :hover {
-
-
+.btn-jobs:hover {
 }
 /*send jobs container */
 
 #sendjobs-container {
-    background: url('IMAGEM /fundo azul.png') no-repeat ; /*adicionado imagem*/
+    background: url('IMAGEM/fundo\ azul.png') no-repeat ; /*adicionado imagem*/
     background-size: cover;
     background-position: 0 25%;
     padding: 15em 0;
@@ -346,7 +351,7 @@ nav:after {
 /*depoimentos*/
 
 #testmony-container {
-    background: url('IMAGEM /fundo azul.png') no-repeat;
+    background: url('IMAGEM/fundo\ azul.png') no-repeat;
     background-size: cover;
     padding: 10em 0;
 }
@@ -558,3 +563,54 @@ footer .wrapper:after {
      font-weight: 600;
      margin-top: 40px;
  }
+
+   /*deixando o site responsive*/
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 768px){
+
+   .company-box {
+       width: 46%;
+       padding-left: 1em;
+   }
+   .company-box .company-info h3 {
+       font-size: 1em;
+   }
+   .company-box .company-info p, .locality i, .locality p, .job-type span {
+       font-size: .8em;
+   }
+   .job-type {
+       right: 1em;
+   }
+
+   #sendjobs-inner h2, #sendjobs-inner p {
+       text-shadow: .5px .5px #080;
+   }
+   .status-box {
+       width: 49.4%;
+       border: none;
+   }
+   .status-box: :nth-child(1), .status-box:nth-child(3){
+       border-right: 1px solid #ddd;
+   }
+
+   .testmony-box { 
+       width: 49.4%;
+   }
+
+   .article-box {
+       width: 100%;
+       display: block;
+       padding: 0;
+       margin-bottom: 3em;
+   }
+
+
+}
+
+@media screen and (max-width: 576px){
+    .nav-container .btn-menumobile {
+        display: block !important;
+    }
+}
